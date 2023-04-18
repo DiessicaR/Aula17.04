@@ -51,7 +51,7 @@ alert(frase + '\n' + novaFrase)
 
 
 
-//Peça para o usuário escrever uma frase e imprima no console a frase alterada, com: 
+/*Peça para o usuário escrever uma frase e imprima no console a frase alterada, com: 
 // Todas as letras maiúsculas
 //Na língua do i (substituindo a vogal "o" por "i")
 //O tamanho da frase
@@ -67,10 +67,19 @@ let frase = prompt("Manda uma frase aí")
 console.log(frase.toLocaleUpperCase())
 console.log(frase.replaceAll("o","i"))
 console.log(frase.length)
-alert(frase + '\n' + frase.toUpperCase() + '\n' + frase.replaceAll("o","i") +'\n' + frase.length)
+alert(frase.replaceAll("o","i").toUpperCase() +  "// length " + frase.length)
 //alert(frase +  'length ' + frase.length)
+*/
 
+//Crie um array com pelo menos 5 raças de cachorro
 
+const listaDeRacas = ["poodle", "pastor alemão" , "Daschaund", "Boxer", "Corgie"]
+
+//Peça para o usuário inserir um número de 0 a 4
+let indice = parseInt(prompt("Digite um número de 0 a 4:"))
+
+//Imprima no console a raça correspondente à posição escolhida pelo usuário 
+alert(listaDeRacas[indice])
 
 
 
